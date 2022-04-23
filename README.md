@@ -52,9 +52,46 @@ TBA
 TBA
 
 
+
+
 ## Setting up an IDE
 
-TBA
+Although using an integrated development environment ([IDE](Integrated development environment)) is not necessary, it provides several utilities that [make your development faster](#rapid-prototyping):
+- Code completion; jumping among functions, classes, etc.; syntax highlighting; ...
+- Integrates command line tools that enforce good Python programming habits
+- Convenient debugging
+
+In this tutorial, we provide instructions for [PyCharm](https://www.jetbrains.com/pycharm/), the leading IDE for Python development. The rest of the instructions apply to the following version: PyCharm 2022.1 (Community Edition). If you cannot find the settings described in this guide, [let us know](#contributing). First, download it from its website -- the Community Edition is free. Install PyCharm and perform the following steps to make it suitable for developing Slicer extensions:
+
+1.  Create a new project
+    *File* --> *New Project...* then select *Previously configured interpreter*. Navigate to the Python interpreter of Slicer, located at *<Slicer_root>/bin/PythonSlicer*. Once the project is created, PyCharm will create a hidden folder in your project root under the name *idea*. This is where it stores your IDE settings related to the newly created project.
+
+2.  Configure the project
+
+    By default, you will see the *Project* and *Structure* tabs on the left side bar. If you drop down the *External Libraries* menu within the *Project* tab, you can notice that the necessary packages that come with Slicer are automatically recognized.
+    
+    In older versions of PyCharm, the necessary libraries are not added to the path automatically. You can add them manually by clicking on *Add Content Root* in *File* --> *Settings* --> *Project Structure*:
+    - *<Slicer_root>/bin/Python*
+    - *<Slicer_root>/lib/Python*
+    - *<Slicer_root>/lib/QtPlugins*
+    - *<Slicer_root>/lib/Slicer-4.xx*
+
+3. Test the configuration
+
+    Create a new Python file (e.g. `test.py`) in the project and import some modules to check if everything works well:
+    
+    ```python
+    import slicer.util
+    import ctk
+    import qt
+    from DICOMLib import DICOMUtils
+    ```
+    
+    Click on the `util` module while holding the Ctrl key. It should open the module, containing lots of functions. To navigate among those functions, activate the *Structure* tab on the left side bar.
+    
+
+This completes the basic configuration of PyCharm. Note that you cannot run your code from within PyCharm. The reason is that it requires dynamic libraries that are not found unless you run your code *from within* the Python interpreter of Slicer, as explained in the beginning of section [**Python development**](#python-development). Nevertheless, the properly configured Python environment allows you faster prototyping, as you will see next.
+
 
 
 ## Rapid prototyping
@@ -62,11 +99,10 @@ TBA
 TBA
 
 
+
 ## Installing additional packages
 
 TBA
-
-
 
 # Contributing
 
