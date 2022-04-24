@@ -94,6 +94,18 @@ In this tutorial, we provide instructions for [PyCharm](https://www.jetbrains.co
 
 This completes the basic configuration of PyCharm. Note that you cannot run your code from within PyCharm. The reason is that it requires dynamic libraries that are not found unless you run your code *from within* the Python interpreter of Slicer, as explained in the beginning of section [**Python development**](#python-development). Nevertheless, the properly configured Python environment allows you faster prototyping, as you will see next.
 
+PyCharm comes with many useful bundled plugins. To catch even more potential bugs or coding style mistakes, here are some additional static analyzers we found useful over the years:
+
+- [Pydantic](https://plugins.jetbrains.com/plugin/12861-pydantic)
+- [Pylint](https://plugins.jetbrains.com/plugin/11084-pylint)
+- [SonarLint](https://plugins.jetbrains.com/plugin/7973-sonarlint)
+- [Sourcery](https://plugins.jetbrains.com/plugin/12631-sourcery)
+
+For improved code completion, the following plugins proved to be handy:
+
+- [AiXcoder Code Completer](https://plugins.jetbrains.com/plugin/13574-aixcoder-code-completer)
+- [Tabnine AI Code Completion](https://plugins.jetbrains.com/plugin/12798-tabnine-ai-code-completion-js-java-python-ts-rust-go-php--more)
+
 
 
 ## Rapid prototyping
