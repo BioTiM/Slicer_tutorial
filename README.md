@@ -105,6 +105,13 @@ TBA
 
 TBA
 
+
+# Getting help
+
+If at any point in your development journey you get stuck, you can post your (well-formulated) question on the friendly [3D Slicer Discourse forum](https://discourse.slicer.org/).
+
+
+
 # Contributing
 
 If you are aware of other useful tricks for using Slicer or developing extensions, let us know by [creating an issue](https://github.com/BioTiM/Slicer_tutorial/issues), [opening a pull request](https://github.com/BioTiM/Slicer_tutorial/pulls) or [starting a discussion](https://github.com/BioTiM/Slicer_tutorial/discussions). The same applies if you find inaccuracies in this guide or if an explanation is not clear.
