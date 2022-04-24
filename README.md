@@ -1,5 +1,5 @@
 # 3D Slicer tutorial
-3D Slicer learning material for the Mater project
+3D Slicer learning material
 
 
 
@@ -56,7 +56,7 @@ TBA
 
 ## Setting up an IDE
 
-Although using an integrated development environment ([IDE](Integrated development environment)) is not necessary, it provides several utilities that [make your development faster](#rapid-prototyping):
+Although using an [integrated development environment](https://en.wikipedia.org/wiki/Integrated_development_environment) (IDE) is not necessary, it provides several utilities that [make your development faster](#rapid-prototyping):
 - Code completion; jumping among functions, classes, etc.; syntax highlighting; ...
 - Integrates command line tools that enforce good Python programming habits
 - Convenient debugging
@@ -64,6 +64,7 @@ Although using an integrated development environment ([IDE](Integrated developme
 In this tutorial, we provide instructions for [PyCharm](https://www.jetbrains.com/pycharm/), the leading IDE for Python development. The rest of the instructions apply to the following version: PyCharm 2022.1 (Community Edition). If you cannot find the settings described in this guide, [let us know](#contributing). First, download it from its website -- the Community Edition is free. Install PyCharm and perform the following steps to make it suitable for developing Slicer extensions:
 
 1.  Create a new project
+
     *File* --> *New Project...* then select *Previously configured interpreter*. Navigate to the Python interpreter of Slicer, located at *<Slicer_root>/bin/PythonSlicer*. Once the project is created, PyCharm will create a hidden folder in your project root under the name *idea*. This is where it stores your IDE settings related to the newly created project.
 
 2.  Configure the project
