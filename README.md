@@ -5,8 +5,8 @@
 
 ## Contents
 
-- [How to read this guide?](#how-to-read-this-guide?)
-- [What is 3D Slicer?](#what-is-3d-slicer?)
+- [How to read this guide?](#how-to-read-this-guide)
+- [What is 3D Slicer?](#what-is-3d-slicer)
 - [Installation](#installation)
 - [Directory structure](#directory-structure)
 - [Python development](#python-development)
